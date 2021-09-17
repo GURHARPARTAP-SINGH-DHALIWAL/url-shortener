@@ -34,5 +34,5 @@ Clone the repo or download zip and run the following commands-
 
 `npm run dev`
 
-Will add some more features like adding comments using AJAX in future.
+
 
