@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://gurharpartap:gurharpartap@cluster0.cqcrk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "baseUrl":"https://usnr.herokuapp.com/"
+}
