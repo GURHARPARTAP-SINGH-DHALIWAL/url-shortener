@@ -19,18 +19,20 @@ router.get('/:code',async (req,res)=>{
         }
         else
         {
-            return res.status(404).json("No Url Found");
+            return res.render('error');
         }
     }
     catch(err)
     {
         console.log(err);
-        return res.status(500).json("Internal Server Error");
+        return res.render('error');
     }
 
 });
 
 
-
+router.get('*',(req,res)=>{
+    return res.render('error');
+});
 
 module.exports=router;
