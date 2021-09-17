@@ -12,6 +12,7 @@ router.get('/',(req,res)=>{
 router.get('/:code',async (req,res)=>{
     try{
         const url=await Url.findOne({urlCode:req.params.code});
+      
        
         if(url)
         {
