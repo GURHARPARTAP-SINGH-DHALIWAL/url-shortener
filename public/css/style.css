@@ -51,3 +51,7 @@ footer{
     border: 2px solid black;
     border-radius: 50%;
 }
+body{
+    background-image: url("https://wallpaperaccess.com/full/1727297.jpg");
+    background-size: cover;
+}
