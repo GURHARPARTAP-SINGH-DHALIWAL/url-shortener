@@ -52,6 +52,17 @@ footer{
     border-radius: 50%;
 }
 body{
-    background-image: url("https://wallpaperaccess.com/full/1727297.jpg");
+    background-image: url("https://i.pinimg.com/originals/3f/32/0c/3f320cf5acc1754059922df2be39a08e.jpg");    
+  
+    
+    /* background-size: cover;  */
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sbutton{
+    overflow-x: hidden;
+}
+nav{
+    overflow:hidden;
 }
