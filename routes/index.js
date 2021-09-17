@@ -32,8 +32,8 @@ router.get('/:code',async (req,res)=>{
 });
 
 
-// router.get('*',(req,res)=>{
-//     return res.render('error');
-// });
+router.get('*',(req,res)=>{
+    return res.render('error');
+});
 
 module.exports=router;
