@@ -1,4 +1,4 @@
-# [URL Shortener]("https://usnr.herokuapp.com/")
+# [URL Shortener](https://usnr.herokuapp.com/)
 
 A basic URL Shortener
 
