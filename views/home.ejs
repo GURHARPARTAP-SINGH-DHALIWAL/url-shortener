@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>URL Shortener | Home</title>
+</head>
+<body>
+    
+                
+  <nav>
+    <div class="nav-wrapper black">
+      <a href="#!" class="brand-logo">URL Shortener</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://github.com/GURHARPARTAP-SINGH-DHALIWAL"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/gurharpartap-singh-dhaliwal"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="https://github.com/GURHARPARTAP-SINGH-DHALIWAL">Github</a></li>
+    <li><a href="https://linkedin.com/in/gurharpartap-singh-dhaliwal">LinkedIn</a></li>
+   
+  </ul>
+          
+
+    
+
+     <div class="row center">
+            <form action="" id="form" class="row left">
+                <label for="url">URL :</label>
+                <input type="text" name="url" required placeholder="Type in your URL">
+
+                <button class="btn " type="submit">Get Shortened Url!</button>
+
+
+            </form>
+
+        </div>
+
+            <div class="ouput row left" id="link">
+               <input type="text" readonly value="Your Shortened URL will appear here" class="col s8" id="link-text">
+                <div class="col s2 right"><a href="" onclick="myFunction()"><i class="fas fa-copy right" id="icon"></i></a></div>
+            </div>
+
+
+
+</body>
+
+
+<footer class="black valign-wrapper">
+
+    
+
+    <div class="row center white-text">
+        <b> &copy; GSD</b>
+    </div>
+
+
+</footer>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+  function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("link-text");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Link Copied to Clipboard");
+}
+
+</script>
+<script src="/js/main.js"></script>
+</html>
